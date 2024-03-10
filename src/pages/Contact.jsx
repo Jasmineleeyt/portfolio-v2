@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 
 // Import a helper function that will check if the email is valid
