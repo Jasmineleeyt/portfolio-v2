@@ -1,5 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
+import { MdOutlineMessage  } from 'react-icons/md';
+import { Form, Button } from 'react-bootstrap';
+import './Contact.css';
 
 // Import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
@@ -48,32 +51,20 @@ function contactForm() {
   };
 
   return (
-    <div className="container text-center">
-      <h2>Contact Jasmine</h2>
-      <form className="form" onSubmit={contactFormSubmit}>
-      <input
-          value={fname}
-          name="fname"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Message"
-        />
-        <button type="submit">Submit</button>
-      </form>
+    <div className="contact-container text-center">
+      <h2>Say Hi To Jasmine <MdOutlineMessage /></h2>
+      <Form className="form" onSubmit={contactFormSubmit}>
+        <Form.Group controlId="fname">
+          <Form.Control value={fname} name="fname" onChange={handleInputChange} type="text" placeholder="Name" className="contact-input"/>
+        </Form.Group>
+        <Form.Group controlId="email">
+          <Form.Control value={email} name="email" onChange={handleInputChange} type="email" placeholder="Email" className="contact-input"/>
+        </Form.Group>
+        <Form.Group controlId="email">
+          <Form.Control value={message} name="message" onChange={handleInputChange} type="text" placeholder="Message" className="contact-input"/>
+        </Form.Group>
+        <Button type="submit">Submit</Button>
+      </Form>
     </div>
   );
 }
