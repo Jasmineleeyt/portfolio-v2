@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import ConnectUs from '../../public/connect-us.png';
-import HoldText from '../../public/hold-onto-my-text.png';
-import LogoMaker from '../../public/svg-logo-maker.png';
-import Kumamo from '../../public/kumamo.png';
-import Weather from '../../public/hows-the-weather.png';
-import DailyPlanner from '../../public/daily-planner.png';
+import ConnectUs from '../assets/connect-us.png';
+import HoldText from '../assets/hold-onto-my-text.png';
+import LogoMaker from '../assets/svg-logo-maker.png';
+import Kumamo from '../assets/kumamo.png';
+import Weather from '../assets/hows-the-weather.png';
+import DailyPlanner from '../assets/daily-planner.png';
 
 
 
@@ -71,8 +71,8 @@ const Portfolio = () => {
                         <Card.Title>{project.title}</Card.Title>
                         <Card.Text>{project.description}</Card.Text>
                         <Card.Text>{project.keywords}</Card.Text>
-                        <Button variant="dark" href={project.github_link}>Github Repo</Button>
-                        <Button variant="dark" href={project.deployed_demo}>Demo/Deployed App</Button>
+                        <Button variant="dark" href={project.github_link} target="_blank" rel="noopener noreferrer">Github Repo</Button>
+                        <Button variant="dark" href={project.deployed_demo} target="_blank" rel="noopener noreferrer">Demo/Deployed App</Button>
                     </Card>
                 </div>
             ))}
