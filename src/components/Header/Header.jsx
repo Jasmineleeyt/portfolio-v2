@@ -3,19 +3,6 @@ import Navigation from './Navigation';
 import './Header.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
-
-
-// export default function Header() {
-//     return (
-//       <div>
-//         <header>
-//             <h1>Test</h1>
-//             <Navigation />
-//         </header>
-//       </div>
-//     );
-//   }
-
   export default function Header() {
     return (
       <header>

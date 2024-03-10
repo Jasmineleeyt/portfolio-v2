@@ -71,8 +71,10 @@ const Portfolio = () => {
                         <Card.Title>{project.title}</Card.Title>
                         <Card.Text>{project.description}</Card.Text>
                         <Card.Text>{project.keywords}</Card.Text>
-                        <Button className="btn" href={project.github_link} target="_blank" rel="noopener noreferrer">Github Repo</Button>
-                        <Button className="btn" href={project.deployed_demo} target="_blank" rel="noopener noreferrer">Demo/Deployed App</Button>
+                        <div className='btn-container'>
+                            <Button className="btn" href={project.github_link} target="_blank" rel="noopener noreferrer">Github Repo</Button>
+                            <Button className="btn" href={project.deployed_demo} target="_blank" rel="noopener noreferrer">Demo/Deployed App</Button>
+                        </div>
                     </Card>
                 </div>
             ))}

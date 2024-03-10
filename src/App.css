@@ -3,3 +3,19 @@ body {
     background-color: #FCF9E4;
     color: #2E361C;
 }
+
+h2, .about-para {
+    padding: 15px 0px 15px 10px;
+}
+
+.btn {
+    background-color: #DDA15E;
+    border-color: #C66F23;
+    padding: 6px;
+    margin: 3px;
+}
+
+.btn:hover{
+    background-color: #90A955;
+    border-color: #2E361C;
+}
