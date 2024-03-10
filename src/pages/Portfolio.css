@@ -1,0 +1,20 @@
+.h5, p {
+    padding: 15px 0px 15px 10px;
+}
+
+/* .btn {
+    background-color: #DDA15E;
+    border-color: #C66F23;
+    padding: 10px;
+} */
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+/* 
+.btn:hover{
+    background-color: #90A955;
+    border-color: #2E361C;
+} */

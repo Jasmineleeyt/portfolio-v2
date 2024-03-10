@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import ConnectUs from '../../public/connect-us.png';
-import HoldText from '../../public/hold-onto-my-text.png';
-import LogoMaker from '../../public/svg-logo-maker.png';
-import Kumamo from '../../public/kumamo.png';
-import Weather from '../../public/hows-the-weather.png';
-import DailyPlanner from '../../public/daily-planner.png';
-
+import ConnectUs from '../assets/connect-us.png';
+import HoldText from '../assets/hold-onto-my-text.png';
+import LogoMaker from '../assets/svg-logo-maker.png';
+import Kumamo from '../assets/kumamo.png';
+import Weather from '../assets/hows-the-weather.png';
+import DailyPlanner from '../assets/daily-planner.png';
+import './Portfolio.css';
 
 
 const Portfolio = () => {
@@ -63,16 +63,18 @@ const Portfolio = () => {
     ];
     return(
         <div>
-            <h1>Check out some of my work!</h1>
+            <h2>Check out some of my work!</h2>
             {projects.map((project, index) =>(
-                <div className="" key={index}>
-                    <Card style={{ width: '20rem' }} >
+                <div className="card-sec" key={index}>
+                    <Card style={{ width: '20rem' }} className="card-proj">
                         <Card.Img variant="top" src={project.image} alt={project.title} />
                         <Card.Title>{project.title}</Card.Title>
                         <Card.Text>{project.description}</Card.Text>
                         <Card.Text>{project.keywords}</Card.Text>
-                        <Button variant="dark" href={project.github_link}>Github Repo</Button>
-                        <Button variant="dark" href={project.deployed_demo}>Demo/Deployed App</Button>
+                        <div className='btn-container'>
+                            <Button className="btn" href={project.github_link} target="_blank" rel="noopener noreferrer">Github Repo</Button>
+                            <Button className="btn" href={project.deployed_demo} target="_blank" rel="noopener noreferrer">Demo/Deployed App</Button>
+                        </div>
                     </Card>
                 </div>
             ))}

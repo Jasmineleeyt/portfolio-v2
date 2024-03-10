@@ -10,7 +10,7 @@ import App from './App.jsx';
 import AboutPage from '../src/pages/About.jsx';
 import PortfolioPage from '../src/pages/Portfolio.jsx';
 import ContactPage from '../src/pages/Contact.jsx';
-// import Resume from '../src/pages/Resume.jsx';
+import Resume from '../src/pages/Resume.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,17 +29,14 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <ContactPage />,
       },
-      // {
-      //   path: 'resume',
-      //   element: <Resume />
-      // }
+      {
+        path: 'resume',
+        element: <Resume />
+      }
     ]
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
 )
