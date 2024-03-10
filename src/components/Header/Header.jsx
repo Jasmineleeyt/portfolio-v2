@@ -1,13 +1,34 @@
 import React from 'react';
-import Navigation from '../Navigation';
+import Navigation from './Navigation';
+import './Header.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
-export default function Header() {
+
+
+// export default function Header() {
+//     return (
+//       <div>
+//         <header>
+//             <h1>Test</h1>
+//             <Navigation />
+//         </header>
+//       </div>
+//     );
+//   }
+
+  export default function Header() {
     return (
-      <div>
-        <header>
-            <h1>Jasmine Lee</h1>
-            <Navigation />
-        </header>
-      </div>
+      <header>
+        <Container fluid>
+          <Row>
+            <Col>
+              <h1>Jasmine Lee</h1>
+            </Col>
+            <Col className="d-flex justify-content-end" >
+              <Navigation />
+            </Col>
+          </Row>
+        </Container>
+      </header>
     );
   }

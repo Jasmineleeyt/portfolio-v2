@@ -49,7 +49,7 @@ function contactForm() {
 
   return (
     <div className="container text-center">
-      <h1>Contact Jasmine</h1>
+      <h2>Contact Jasmine</h2>
       <form className="form" onSubmit={contactFormSubmit}>
       <input
           value={fname}
