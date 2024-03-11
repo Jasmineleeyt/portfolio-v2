@@ -14,3 +14,7 @@ header h1 {
 .nav-sec {
     display: inline-block;
 }
+
+.active {
+    background-color: #FCF9E4;
+}

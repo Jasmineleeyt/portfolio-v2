@@ -5,10 +5,10 @@ import './Header.css';
 export default function Nav(){
     return (
         <div className="nav-sec">
-            <NavLink to= "/" className="nav-link">About Me</NavLink>
-            <NavLink to= "/Portfolio" className="nav-link">Portfolio</NavLink>
-            <NavLink to= "/Contact" className="nav-link">Contact Me</NavLink>
-            <NavLink to= "/Resume" className="nav-link">Resume</NavLink>
+            <NavLink to= "/" className="nav-link" activeClassName="active">About Me</NavLink>
+            <NavLink to= "/Portfolio" className="nav-link" activeClassName="active">Portfolio</NavLink>
+            <NavLink to= "/Contact" className="nav-link" activeClassName="active">Contact Me</NavLink>
+            <NavLink to= "/Resume" className="nav-link" activeClassName="active">Resume</NavLink>
         </div>
     )
 }
