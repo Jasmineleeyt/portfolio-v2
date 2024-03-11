@@ -61,7 +61,7 @@ function contactForm() {
           <Form.Control value={email} name="email" onChange={handleInputChange} type="email" placeholder="Email" className="contact-input"/>
         </Form.Group>
         <Form.Group controlId="email">
-          <Form.Control value={message} name="message" onChange={handleInputChange} type="text" placeholder="Message" className="contact-input"/>
+          <Form.Control as="textarea" rows={5} value={message} name="message" onChange={handleInputChange} type="text" placeholder="Message" className="contact-input"/>
         </Form.Group>
         <Button type="submit">Submit</Button>
       </Form>
