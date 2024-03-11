@@ -7,7 +7,7 @@ const Project = (project) => {
     <div>
       <div className="card-sec" key={project.index}>
         <Card style={{ width: "20rem", height: "100%" }} className="card-proj">
-          <Card.Img variant="top" src={project.img} alt={project.title} />
+          <Card.Img variant="top" src={project.img} alt={project.title} className="card-img"/>
           <Card.Body className="d-flex flex-column justify-content-end">
             <Card.Title>{project.title}</Card.Title>
             <Card.Text>{project.description}</Card.Text>

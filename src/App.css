@@ -8,6 +8,11 @@ h2, .about-para {
     padding: 15px 0px 15px 10px;
 }
 
+.avatar {
+    width: 150px;
+    height: 150px;
+}
+
 .btn {
     background-color: #DDA15E;
     border-color: #C66F23;
