@@ -4,7 +4,7 @@ import Avatar from '../../src/assets/avatar.jpg'
 
 export default function AboutMe() {
     return (
-      <div>
+      <div className="about-sec">
         <h2>About Me</h2>
         <img className="avatar" src={Avatar} alt="avatar"/>
         <p className="about-para">
