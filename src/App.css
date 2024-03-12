@@ -2,10 +2,18 @@ body {
     font-family: Snell Roundhand, cursive;
     background-color: #FCF9E4;
     color: #2E361C;
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+ */
 }
 
 h2, .about-para {
     padding: 15px 0px 15px 10px;
+}
+
+.about-sec {
+    padding: 2% 5% 0 5%;
 }
 
 .avatar {
